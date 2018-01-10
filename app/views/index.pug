@@ -1,0 +1,22 @@
+extends template
+
+block content
+    button(type = 'button' onclick = "location.href = '/login'" ) Login
+    h1 Welcome to Crimson Coupons
+    form
+        h2 Sign up for Coupon Delivery
+        input(type='text' name='name' id = 'name' placeholder='Name') 
+        br
+        input(type='email' name='email' placeholder='Email') 
+        br
+        input(type='password' name='password' placeholder='password') 
+        br
+        input(type='number' name='classYear' placeholder='Class year') 
+        br
+        input(type='text' name='address' placeholder='address') 
+        br
+
+        button(type = 'button' onclick = 'register()') ClickMe
+
+
+

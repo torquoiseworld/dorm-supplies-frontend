@@ -1,0 +1,19 @@
+extends template
+
+block content
+    h1 Register for an account
+    form
+        h2 Sign up for Coupon Delivery
+        input(type='text' name='name' id = 'name' placeholder='Name') 
+        br
+        input(type='email' name='email' placeholder='Email') 
+        br
+        input(type='number' name='classYear' placeholder='Class year') 
+        br
+        input(type='phone' name='phone' placeholder='Phone Number') 
+        br
+
+        button(type = 'button' onclick = 'logData()') Submit
+
+block postScript
+    script submitOnEnterKey(submitForm);
